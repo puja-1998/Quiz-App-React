@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.quiz-ans{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ans1{
+    background-color: antiquewhite;
+    padding: 0.7rem;
+    display: flex;
+    gap: 15px;
+    width: 400px;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    padding-left: 2rem;
+    transition: 0.5s ease-in-out;
+}
+input:hover{
+    cursor: pointer;
+}
+.ans1:hover{
+    background-color: rgba(58, 206, 14, 0.651);
+    scale: 1.2;
+    transition: 0.5s ease-in-out;
+}

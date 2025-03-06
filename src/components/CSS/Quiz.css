@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.eachSet{
+    padding: 1rem;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    position: relative;
+}
+.eachSet p{
+    padding-bottom: 1rem;
+    width: 500px;
+    text-align: center;
+    font-weight: 600;
+}
+.eachSet .timer{
+    color: blue;
+    float: right;
+}
+.eachSet .Question{
+    padding: 1rem;
+    border-radius: 25px;
+}
+.eachSet h2, .result h1{
+    font-size: 48px;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+.eachSet button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    right: 30px;
+    bottom: -30px;
+    animation: skip 1s ease-in-out   infinite alternate;
+}
+
+@keyframes skip{
+    0% {
+        font-size: 22px;
+        transition: 2s ease-in-out;
+        color: white;
+        text-shadow: 0 0 10px black;
+    }
+    100% {
+        transition: 2s ease-in-out;
+        font-size: 27px;
+        color: purple;
+    }
+}
+
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    animation: spinner-plncf9 4s infinite;
+ }
+ 
+ .spinner::before,
+ .spinner::after {
+    content: "";
+    grid-area: 1/1;
+    border: 9px solid;
+    border-radius: 50%;
+    border-color: #474bff #474bff #0000 #0000;
+    mix-blend-mode: darken;
+    animation: spinner-plncf9 2s infinite linear;
+ }
+ 
+ .spinner::after {
+    border-color: #0000 #0000 #dbdcef #dbdcef;
+    animation-direction: reverse;
+ }
+ 
+ @keyframes spinner-plncf9 {
+    100% {
+       transform: rotate(2turn);
+    }
+ }
+ 
